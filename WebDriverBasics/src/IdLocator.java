@@ -13,6 +13,7 @@ public class IdLocator {
 		WebDriver chDriver = new ChromeDriver();// complex object
 		chDriver.manage().window().maximize();
 		chDriver.get("https://opensource-demo.orangehrmlive.com/");
+		chDriver.navigate().to("https://www.facebook.com/");
 //		chDriver.findElement(By.id("txtUsername")).sendKeys("Admin");
 //		chDriver.findElement(By.id("txtPassword")).sendKeys("admin123");
 //		chDriver.findElement(By.id("btnLogin")).click();
@@ -25,6 +26,8 @@ public class IdLocator {
 		//chDriver.findElement(By.id("txtUsername")).clear();
 		
 //		//tagName Locator:
+		//List<WebElement> list =  chDriver.findElements(By.tagName("input"));
+		
 //		int count =  chDriver.findElements(By.tagName("input")).size();
 //		System.out.println(count);
 		
