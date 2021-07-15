@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test name="Test">
+    <classes>
+      <class name="TestNGDemos.AnnotationsDemo"></class>
+      <class name="TestNGDemos.Prioritization"/>
+       <class name="Prioritization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
