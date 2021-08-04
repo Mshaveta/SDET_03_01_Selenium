@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43840" started-at="2021-08-03T20:29:23 IST" finished-at="2021-08-03T20:30:06 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43840" started-at="2021-08-03T20:29:23 IST" finished-at="2021-08-03T20:30:06 IST">
+      <class name="com.qa.hrm.tests.HomeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hrm.tests.HomeTest@6b57696f]" name="setUp" is-config="true" duration-ms="6355" started-at="2021-08-03T20:29:50 IST" finished-at="2021-08-03T20:29:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfiyLogOut()[pri:0, instance:com.qa.hrm.tests.HomeTest@6b57696f]" name="verfiyLogOut" duration-ms="9107" started-at="2021-08-03T20:29:57 IST" finished-at="2021-08-03T20:30:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyLogOut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hrm.tests.HomeTest@6b57696f]" name="tearDown" is-config="true" duration-ms="428" started-at="2021-08-03T20:30:06 IST" finished-at="2021-08-03T20:30:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hrm.tests.HomeTest -->
+      <class name="com.qa.hrm.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hrm.tests.LoginTest@32d2fa64]" name="setUp" is-config="true" duration-ms="15712" started-at="2021-08-03T20:29:23 IST" finished-at="2021-08-03T20:29:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginWithValidCreds()[pri:0, instance:com.qa.hrm.tests.LoginTest@32d2fa64]" name="verifyLoginWithValidCreds" duration-ms="7663" started-at="2021-08-03T20:29:38 IST" finished-at="2021-08-03T20:29:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCreds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hrm.tests.LoginTest@32d2fa64]" name="tearDown" is-config="true" duration-ms="4406" started-at="2021-08-03T20:29:46 IST" finished-at="2021-08-03T20:29:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hrm.tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="34707" started-at="2021-08-03T20:32:01 IST" finished-at="2021-08-03T20:32:36 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="34707" started-at="2021-08-03T20:32:01 IST" finished-at="2021-08-03T20:32:36 IST">
+      <class name="com.qa.hrm.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hrm.tests.LoginTest@1efed156]" name="setUp" is-config="true" duration-ms="9394" started-at="2021-08-03T20:32:01 IST" finished-at="2021-08-03T20:32:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginWithValidCreds()[pri:0, instance:com.qa.hrm.tests.LoginTest@1efed156]" name="verifyLoginWithValidCreds" duration-ms="7938" started-at="2021-08-03T20:32:10 IST" finished-at="2021-08-03T20:32:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCreds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hrm.tests.LoginTest@1efed156]" name="tearDown" is-config="true" duration-ms="345" started-at="2021-08-03T20:32:18 IST" finished-at="2021-08-03T20:32:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hrm.tests.LoginTest -->
+      <class name="com.qa.hrm.tests.HomeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hrm.tests.HomeTest@4bbfb90a]" name="setUp" is-config="true" duration-ms="7400" started-at="2021-08-03T20:32:19 IST" finished-at="2021-08-03T20:32:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verfiyLogOut()[pri:0, instance:com.qa.hrm.tests.HomeTest@4bbfb90a]" name="verfiyLogOut" duration-ms="9083" started-at="2021-08-03T20:32:26 IST" finished-at="2021-08-03T20:32:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyLogOut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hrm.tests.HomeTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="431" started-at="2021-08-03T20:32:35 IST" finished-at="2021-08-03T20:32:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hrm.tests.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
