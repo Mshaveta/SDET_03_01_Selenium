@@ -1,0 +1,59 @@
+1.	Parameterized job- Go to General->This project is parameterized->Choice Parameter
+For eg:
+Name: browser
+Choice: Chrome
+2.	Restrict where this project can be run: Fill Node name - Slave node
+3.	Root- pom.xml
+4.	Goals and options- clean test –DbrowserName=”${browser}”
+In pom.xml:
+<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M5</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+
+						<systemPropertyVariables>
+							<propertyName>${browser}</propertyName>
+						</systemPropertyVariables>
+
+					</configuration>
+				</plugin>
+
+In script: TESTNG Class
+package FB;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestNGDemo {
+	WebDriver driver;
+	
+	@Test
+	public void m1() {
+		String bName = System.getProperty("browser"); 
+		System.out.println(bName);
+		if(bName.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			 driver = new FirefoxDriver();
+		}else {
+			WebDriverManager.chromedriver().setup();
+			 driver = new ChromeDriver();
+		}
+		
+//		System.out.println("Title-"+ driver.getTitle());
+//		 
+//		driver.get("https://opensource-demo.orangehrmlive.com/");
+//		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+//		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+//		driver.findElement(By.id("btnLogin")).click();
+		
+	}
+}
