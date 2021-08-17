@@ -1,0 +1,17 @@
+Command for HUb:
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+
+Command for Node: chrome
+java -Dwebdriver.chrome.driver=D:\\2021\\Batches_DATA\SDET_0301\\LearnSelenium_03_01\\sel_grid\\driver\\chromedriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:5555/grid/register -port 5557 -browser browserName=chrome
+
+
+node - request for FF:
+-------------------------
+
+java -Dwebdriver.gecko.driver=D:\\2021\\Batches_DATA\SDET_0301\\LearnSelenium_03_01\\sel_grid\\driver\\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:5555/grid/register -port 5558 -browser browserName=firefox
+
+
+if using Remote Machine:-
+--------------------------------
+java -Dwebdriver.gecko.driver=D:\\2021\\Batches_DATA\SDET_0301\\LearnSelenium_03_01\\sel_grid\\driver\\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://<ip address of HUb machine>:5555/grid/register -port 5558 -browser browserName=firefox
