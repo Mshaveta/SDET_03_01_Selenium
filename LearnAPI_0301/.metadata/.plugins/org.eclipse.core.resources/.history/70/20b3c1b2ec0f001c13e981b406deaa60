@@ -1,0 +1,5 @@
+package resources.googleAPis;
+
+public class GooglePlacesAPI_resource {
+
+}

@@ -1,0 +1,48 @@
+package reqres_apis;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class GetUsersList {
+	@Test
+	public void getUsersList() {
+		RestAssured.baseURI="https://reqres.in/";
+		
+		Response response = given().
+			queryParam("page",2).
+		when().
+			get("api/users").
+		then().
+			extract().response();
+		
+		//String strResponse = response.asString();
+		String strResponse = response.asPrettyString();
+		
+		System.out.println("Result - "+strResponse);
+	}
+	
+	@Test
+	public void getUsersList2() {
+		RestAssured.baseURI="https://reqres.in/";
+		
+		RequestSpecification  reqSpec = RestAssured.given().queryParam("page",2).when();
+		Response response = reqSpec.get("api/users");
+		ValidatableResponse  validRes = response.then();
+		
+//			queryParam("page",2).
+//		when().
+//			get("api/users").
+//		then().
+//			extract().response();
+//		
+//		//String strResponse = response.asString();
+//		String strResponse = response.asPrettyString();
+//		
+//		System.out.println("Result - "+strResponse);
+	}
+}

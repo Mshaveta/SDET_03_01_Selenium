@@ -1,0 +1,5 @@
+package api_request_tests.req_res;
+
+public class GetUsers {
+
+}

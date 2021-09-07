@@ -1,0 +1,24 @@
+package api_request_tests.googleApis;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class AddPlace_XML {
+	@Test
+	public void addPlace() {
+		RestAssured.baseURI=readProperty("google-api-base-url");
+		Response response = given().
+			queryParam("key","qaclick123").
+			body(readXmlFile("addPlacePayload")).
+		when().
+			post("/maps/api/place/add/xml").
+		then().
+			extract().response();
+		System.out.println(response.asPrettyString());
+		 
+	}
+}

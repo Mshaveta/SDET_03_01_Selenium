@@ -1,0 +1,14 @@
+package googleApis;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import com.google.common.io.Files;
+
+public class UtilityClass {
+	public void readXmlFile() {
+		String filePath = System.getProperty("user.dir")+"\\src\\test\\java\\googleApis\\addPlacePayload.xml";
+		Path path = Paths.get(filePath);
+		Files.readBytes(path);
+	}
+}

@@ -1,0 +1,19 @@
+package utility;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class ReadConfigProperties {
+	FileInputStream fis;
+	public static void readProperty() {
+		//1. Get property File path
+		String propFilePath = System.getProperty("user.dir")+"\\config\\config.properties";
+		
+		//Step2: 
+		try {
+			fis = new FileInputStream(propFilePath);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

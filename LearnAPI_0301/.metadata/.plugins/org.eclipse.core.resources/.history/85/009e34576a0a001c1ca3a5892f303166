@@ -1,0 +1,12 @@
+package reqres_apis;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class GetUsersList {
+	@Test
+	public void getUsersList() {
+		RestAssured.baseURI="https://reqres.in/";
+	}
+}

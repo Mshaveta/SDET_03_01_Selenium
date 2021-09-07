@@ -1,0 +1,12 @@
+package twitterAPIs;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class GetHomeTweets {
+	@Test
+	public void getTweets() {
+		RestAssured.baseURI="https://api.twitter.com";
+	}
+}

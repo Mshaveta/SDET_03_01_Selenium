@@ -1,0 +1,8 @@
+package googleApis;
+
+public class AddPlace_XML {
+	@Test
+	public void addPlace() {
+
+	}
+}

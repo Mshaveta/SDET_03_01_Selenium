@@ -1,0 +1,10 @@
+package api_request_tests.req_res;
+
+import org.testng.annotations.Test;
+
+public class GetUsers {
+	@Test
+	public void getUsers() {
+
+	}
+}

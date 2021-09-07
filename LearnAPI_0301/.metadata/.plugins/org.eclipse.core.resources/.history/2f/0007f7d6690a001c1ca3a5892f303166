@@ -1,0 +1,5 @@
+package reqres_apis;
+
+public class GetUsersList {
+
+}

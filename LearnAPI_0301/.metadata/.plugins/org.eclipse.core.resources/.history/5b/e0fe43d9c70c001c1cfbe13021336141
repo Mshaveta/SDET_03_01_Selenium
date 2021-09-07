@@ -1,0 +1,38 @@
+package reqres_apis;
+
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+
+
+public class GetUsersListValidations {
+	@Test 
+	public void getUsersList() {
+		RestAssured.baseURI="https://reqres.in/";
+		
+		Response response = given().
+			queryParam("page",2).
+		when().
+			get("api/users").
+		then().
+			assertThat().statusCode(200).and().
+			header("Content-Type","application/json; charset=utf-8").and().
+			body("page",equalTo(12)).
+			extract().response();
+		
+		//String strResponse = response.asString();
+		String strResponse = response.asPrettyString();
+		
+		System.out.println("Result - "+strResponse);
+	}
+	
+	
+}

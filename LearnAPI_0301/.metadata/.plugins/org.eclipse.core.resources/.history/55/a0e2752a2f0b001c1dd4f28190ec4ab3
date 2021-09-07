@@ -1,0 +1,10 @@
+package googleApis;
+
+import org.testng.annotations.Test;
+
+public class AddPlace_XML {
+	@Test
+	public void addPlace() {
+
+	}
+}

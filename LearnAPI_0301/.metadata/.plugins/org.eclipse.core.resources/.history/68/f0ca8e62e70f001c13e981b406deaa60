@@ -1,0 +1,13 @@
+package utility;
+
+import java.io.FileInputStream;
+
+public class ReadConfigProperties {
+	public static void readProperty() {
+		//1. Get property File path
+		String propFilePath = System.getProperty("user.dir")+"\\config\\config.properties";
+		
+		//Step2: 
+		FileInputStream fis = new FileInputStream(propFilePath);
+	}
+}

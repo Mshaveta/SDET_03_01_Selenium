@@ -1,0 +1,8 @@
+package reqres_apis;
+
+public class GetUsersList {
+@Test
+public void getUsersList() {
+	
+}
+}

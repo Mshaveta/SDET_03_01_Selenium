@@ -1,0 +1,42 @@
+package googleApis;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+/*
+ * given().
+ * 	queryparam().
+ * 	headers().
+ * 	auth().
+ * 	body().
+ * when().
+ * 	get/post/put/delete(resource)
+ * then().
+ * 	validations
+ *  response
+ */
+
+public class AddPlace_XML {
+	@Test
+	public void addPlace() {
+		
+		System.out.println(UtilityClass.readXmlFile());
+		
+		
+//		RestAssured.baseURI="http://216.10.245.166";
+//		Response response = given().
+//			queryParam("key","qaclick123").
+//			body(UtilityClass.readXmlFile()).
+//			header("Content-Type",ContentType.XML).
+//		when().
+//			post("/maps/api/place/add/xml").
+//		then().
+//			extract().response();
+//		System.out.println(response.asPrettyString());
+//		System.out.println(response.asString());
+	}
+}

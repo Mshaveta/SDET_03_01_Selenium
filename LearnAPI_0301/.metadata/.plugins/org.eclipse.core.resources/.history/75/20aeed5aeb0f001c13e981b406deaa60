@@ -1,0 +1,5 @@
+package api_request_tests.googleApis;
+
+public class AddPlace_XML {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;addPlacePayload.xml&apos; to &apos;API_Framework/src/main/java/playloads&apos;&#x0D;&#x0A;- Original project: &apos;Learn_API&apos;&#x0D;&#x0A;- Destination element: &apos;API_Framework/src/main/java/playloads&apos;&#x0D;&#x0A;- Original element: &apos;addPlacePayload.xml&apos;" description="Copy file" destination="=API_Framework/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;playloads" element1="src/test/java/googleApis/addPlacePayload.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1631026252837" units="0" version="1.0"/>
+</session>

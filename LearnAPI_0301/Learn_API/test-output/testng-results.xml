@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30113" started-at="2021-09-03T21:20:20 IST" finished-at="2021-09-03T21:20:51 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30113" started-at="2021-09-03T21:20:20 IST" finished-at="2021-09-03T21:20:51 IST">
+      <class name="twitterAPIs.TweetCRUDOpn">
+        <test-method status="PASS" signature="getTweetUrl()[pri:0, instance:twitterAPIs.TweetCRUDOpn@78e67e0a]" name="getTweetUrl" is-config="true" duration-ms="1842" started-at="2021-09-03T21:20:20 IST" finished-at="2021-09-03T21:20:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTweetUrl -->
+        <test-method status="PASS" signature="postTweet()[pri:1, instance:twitterAPIs.TweetCRUDOpn@78e67e0a]" name="postTweet" duration-ms="8387" started-at="2021-09-03T21:20:22 IST" finished-at="2021-09-03T21:20:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="getTweetUrl()[pri:0, instance:twitterAPIs.TweetCRUDOpn@78e67e0a]" name="getTweetUrl" is-config="true" duration-ms="1" started-at="2021-09-03T21:20:31 IST" finished-at="2021-09-03T21:20:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTweetUrl -->
+        <test-method status="PASS" signature="getTweetId()[pri:2, instance:twitterAPIs.TweetCRUDOpn@78e67e0a]" name="getTweetId" duration-ms="4002" started-at="2021-09-03T21:20:31 IST" finished-at="2021-09-03T21:20:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTweetId -->
+        <test-method status="PASS" signature="getTweetUrl()[pri:0, instance:twitterAPIs.TweetCRUDOpn@78e67e0a]" name="getTweetUrl" is-config="true" duration-ms="2" started-at="2021-09-03T21:20:35 IST" finished-at="2021-09-03T21:20:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTweetUrl -->
+        <test-method status="PASS" signature="deleteId()[pri:3, instance:twitterAPIs.TweetCRUDOpn@78e67e0a]" name="deleteId" duration-ms="15691" started-at="2021-09-03T21:20:35 IST" finished-at="2021-09-03T21:20:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteId -->
+      </class> <!-- twitterAPIs.TweetCRUDOpn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

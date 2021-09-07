@@ -1,0 +1,22 @@
+package api_request_tests.req_res;
+
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GetUsers {
+	@Test
+	public void getUsers() {
+		RestAssured.baseURI = readProperty("api-base-url");
+
+		Response response = given().queryParam("page", 2).when().get("api/users").then().extract().response();
+
+		// String strResponse = response.asString();
+		String strResponse = response.asPrettyString();
+
+		System.out.println("Result - " + strResponse);
+	}
+}

@@ -1,0 +1,10 @@
+package reqres_apis;
+
+import org.testng.annotations.Test;
+
+public class GetUsersList {
+	@Test
+	public void getUsersList() {
+
+	}
+}
